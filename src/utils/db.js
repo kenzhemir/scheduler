@@ -3,14 +3,18 @@ const config = require('config');
 const logger = require('libs/logger')(module);
 
 
-const isProduction = process.env.NODE_ENV === 'production';
-const url = (isProduction) ? process.env.DB_URI : config.get('mongoose.uri');
-const options = (isProduction) ? {
-  user: process.env.DB_USER,
-  pass: process.env.DB_PASS,
-  useNewUrlParser: true,
-  authSource: process.env.DB_SOURCE,
-} : config.get('mongoose.options');
+// const isProduction = process.env.NODE_ENV === 'production';
+// const url = (isProduction) ? process.env.DB_URI : config.get('mongoose.uri');
+// const options = (isProduction) ? {
+//   user: process.env.DB_USER,
+//   pass: process.env.DB_PASS,
+//   useNewUrlParser: true,
+//   authSource: process.env.DB_SOURCE,
+// } : config.get('mongoose.options');
+
+const url = config.get('mongoose.uri');
+const options = config.get('mongoose.options');
+
 
 logger.debug(JSON.stringify(options));
 
