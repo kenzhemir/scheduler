@@ -1,0 +1,12 @@
+{
+    "mongoose": {
+        "uri": "mongodb://localhost:27017/scheduler",
+        "options": {
+            "user": "admin",
+            "pass": "password",
+            "useNewUrlParser": true,
+            "authSource": "admin"
+        }
+    },
+    "port": 3000
+}

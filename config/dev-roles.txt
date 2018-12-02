@@ -1,0 +1,10 @@
+db.createUser(
+  {
+    user: "hq-admin",
+    pwd: "admin-pass",
+    roles: [
+       { role: "readWrite", db: "hq-back" },
+       { role: "readWrite", db: "hq-test" }
+    ]
+  }
+)

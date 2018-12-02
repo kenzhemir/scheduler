@@ -1,0 +1,19 @@
+{
+    "mongoose": {
+        "uri": "mongodb://localhost:27017/hq-test",
+        "options": {
+            "server": {
+                "socketOptions": {
+                    "keepAlive": 1,
+                    "connectTimeoutMS": 30000
+                }
+            },
+            "replset": {
+                "socketOptions": {
+                    "keepAlive": 1,
+                    "connectTimeoutMS": 30000
+                }
+            }
+        }
+    }
+}
