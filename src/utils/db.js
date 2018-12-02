@@ -4,7 +4,8 @@ const logger = require('libs/logger')(module);
 
 
 const isProduction = process.env.NODE_ENV === 'production';
-
+console.log(process.env.DB_USER);
+console.log(process.env.NODE_ENV);
 const url = (isProduction) ? process.env.DB_URI : config.get('mongoose.uri');
 const options = (isProduction) ? {
   user: process.env.DB_USER,
