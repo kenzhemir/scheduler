@@ -9,7 +9,7 @@ const options = (isProduction) ? {
   user: process.env.DB_USER,
   pass: process.env.DB_PASS,
   useNewUrlParser: true,
-  authSource: 'admin',
+  authSource: process.env.DB_SOURCE,
 } : config.get('mongoose.options');
 
 logger.debug(JSON.stringify(options));
