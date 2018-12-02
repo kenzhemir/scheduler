@@ -1,6 +1,6 @@
 {
     "mongoose": {
-        "uri": "ds123624.mlab.com:23624/heroku_k2nr2qct",
+        "uri": "mongodb://ds123624.mlab.com:23624/heroku_k2nr2qct",
         "options": {
             "user": "miras",
             "pass": "mirka123",
