@@ -1,11 +1,11 @@
 {
     "mongoose": {
-        "uri": "mongodb://localhost:27017/scheduler",
+        "uri": "mongodb://ds123624.mlab.com:23624/heroku_k2nr2qct",
         "options": {
-            "user": "admin",
-            "pass": "password",
+            "user": "miras",
+            "pass": "mirka123",
             "useNewUrlParser": true,
-            "authSource": "admin"
+            "authSource": "heroku_k2nr2qct"
         }
     },
     "port": 3000
