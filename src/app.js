@@ -46,7 +46,7 @@ switch (process.env.NODE_ENV) {
 
 /* Serve API documentation */
 app.get('/', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/views/index.html`));
+  res.send(process.env);
 });
 
 app.use('/api', router);
