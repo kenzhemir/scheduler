@@ -47,7 +47,7 @@ switch (process.env.NODE_ENV) {
 
 /* Serve API documentation */
 app.get('/', (req, res) => {
-  res.send(mongoose.connection.readyState);
+  res.send('hi!');
 });
 
 app.use('/api', router);

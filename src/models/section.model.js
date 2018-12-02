@@ -20,6 +20,7 @@ const sectionSchema = new Schema({
   venueCap: String,
 });
 
+
 const Section = mongoose.model('sections', sectionSchema);
 
 module.exports = Section;

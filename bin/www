@@ -11,7 +11,6 @@ const http = require('http');
 const logger = require('libs/logger')(module);
 const app = require('../src/app');
 
-console.log(JSON.stringify(process.env));
 /**
  * Normalize a port into a num  ber, string, or false.
  */

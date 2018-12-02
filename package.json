@@ -1,7 +1,7 @@
 {
   "scripts": {
     "prod:start": "cross-env NODE_PATH=. node bin/www",
-    "start": "node bin/www",
+    "start": "cross-env NODE_PATH=. node bin/www",
     "test": "mocha --timeout 10000",
     "db": "mongod --dbpath ./database --auth",
     "lint": "eslint ./src --fix"
