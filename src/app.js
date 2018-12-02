@@ -1,4 +1,5 @@
 /* Packages */
+const mongoose = require('mongoose');
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -46,7 +47,7 @@ switch (process.env.NODE_ENV) {
 
 /* Serve API documentation */
 app.get('/', (req, res) => {
-  res.send(process.env);
+  res.send(mongoose.connection.readyState);
 });
 
 app.use('/api', router);
